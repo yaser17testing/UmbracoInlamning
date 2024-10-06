@@ -1,0 +1,25 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+
+
+
+@{
+var LinkText = Model?.Content.Value<string>("LinkText");
+
+ var LinkUrl =  Model?.Content.Value<string>("LinkUrl") ?? "#";  
+
+
+
+}
+
+
+@if(!string.IsNullOrEmpty(LinkText))
+{
+
+<a href="@LinkUrl" title="@LinkText">@LinkText</a>
+
+}
+
+
