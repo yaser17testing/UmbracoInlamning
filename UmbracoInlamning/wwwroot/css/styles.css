@@ -48,3 +48,32 @@
 		grid-column-end: span min(var(--umb-block-grid--area-column-span, 1), var(--umb-block-grid--area-grid-columns));
 	}
 }
+
+
+
+	/* sectionbackground color*/
+
+
+
+
+.bg-dark {
+    background-color: #171717;
+}
+
+
+
+
+section{
+img{
+width: 40%;
+height: auto;
+
+
+}
+
+
+
+}
+
+
+

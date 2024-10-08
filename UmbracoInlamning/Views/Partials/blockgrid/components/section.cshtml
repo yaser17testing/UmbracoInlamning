@@ -24,13 +24,14 @@ var sectionBackgroundImage = Model?.Content.Value<IPublishedContent>("sectionBac
 
 }
 
-
-<section id="@sectionId" class="@spacingTopClass spacingBottomClass">
+<div class="container">
+<section id="@sectionId" class="@spacingTopClass spacingBottomClass @backgroundColorClass">
 
 
 @if(!string.IsNullOrEmpty(backgroundColorClass))
 {
-<div class="background @backgroundColorClass"></div>
+<div class="@backgroundColorClass"></div>
+<div class="yes">testing background </div>
 
 }
 
@@ -54,5 +55,5 @@ var sectionBackgroundImage = Model?.Content.Value<IPublishedContent>("sectionBac
 
 
 </section>
-
+</div>
 
